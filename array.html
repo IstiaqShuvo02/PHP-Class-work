@@ -1,0 +1,34 @@
+
+<?php
+	for ($i=1; $i <=7 ; $i++) { 
+		for ($j=1; $j <=7 ; $j++) { 
+			$p=$i*$j;
+			echo "$p ";
+		}
+		echo "<br>\n";
+	}
+?>
+
+<h1>ARRAY</h1>
+<?php
+	$weather=array("rain", "sunshine", "clouds",
+             "hail", "sleet", "snow", "wind");
+	
+	$length=count($weather);
+	for ($i=0; $i <$length ; $i++) { 
+		echo $weather[$i];
+		
+
+		echo "<br>\n";
+		
+	}
+
+	$k = array_search('snow', $weather);
+
+	echo "$k <br>";
+
+	echo "We've seen all kinds of weather this month. At the beginning of the month, ";
+    echo "we had $weather[5] and $weather[6]. Then came $weather[1] with a few $weather[2] ";
+    echo "and some $weather[0]. At least we didn't get any $weather[3] or $weather[4].";
+	
+?>
